@@ -1,0 +1,12 @@
+{
+  "NEW_FILE_DETECTED": "Novo arquivo detectado!",
+  "PROCESSING_COMPLETED": "Processamento concluído!",
+  "FILE_DETECTED": "Arquivo detectado",
+  "ALL_FILES_PROCESSED": "Todos os arquivos foram processados",
+  "staticWadoWebserver": "Servidor WADO iniciado",
+  "staticWadoWebserverOutput": "Saída do processo static-wado-webserver",
+  "staticWadoWebserverError": "Erro no processo static-wado-webserver",
+  "staticWadoWebserverClose": "O processo static-wado-webserver foi encerrado",
+  "error": "Erro",
+  "serverClosed": "Servidor encerrado" 
+}
