@@ -16,12 +16,7 @@ const { dicomWebServerConfig } = ConfigPoint.register({
     corsOptions: {
       enabled: true,
       origin: true,
-      // methods: ['GET', "PUT", "POST"],
-      // allowedHeaders: ['Content-Type', 'Authorization'],
-      // ... https://www.npmjs.com/package/cors#configuration-options
     },
-    // proxyAe: "AE-NAME",
-
     webserverPlugins: [],
     options: [
       {

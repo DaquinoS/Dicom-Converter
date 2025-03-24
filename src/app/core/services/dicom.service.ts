@@ -16,7 +16,7 @@ export class DicomService implements OnModuleInit, OnApplicationShutdown {
   private readonly outputDir: string;
   private readonly port: number;
   private sseSubject = new Subject<string>();
-  private wadoServerProcess: ChildProcess | null = null; // Armazena a referência ao processo do WADO Server
+  private wadoServerProcess: ChildProcess | null = null;
 
   constructor(
     private readonly i18n: I18nService,
@@ -33,7 +33,7 @@ export class DicomService implements OnModuleInit, OnApplicationShutdown {
   }
 
   onApplicationShutdown() {
-    this.stopWadoServer(); // Encerra o processo ao desligar o módulo
+    this.stopWadoServer();
   }
 
   get sseStream() {
@@ -127,7 +127,7 @@ export class DicomService implements OnModuleInit, OnApplicationShutdown {
   private stopWadoServer() {
     if (this.wadoServerProcess) {
       console.log('Stopping WADO Server...');
-      this.wadoServerProcess.kill(); // Encerra o processo do WADO Server
+      this.wadoServerProcess.kill();
       this.wadoServerProcess = null;
     }
   }
